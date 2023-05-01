@@ -88,12 +88,12 @@ If you want to stay on nvim 0.7, disable the module, or pin to commit 15f3b5837a
     -- Text
     ["@text"]                   = { fg = spec.fg1 }, -- For strings considerated text in a markup language.
     ["@text.strong"]            = { fg = P.red:subtle(), style = "bold" }, -- bold
-    ["@text.emphasis"]          = { fg = P.red:subtle(), style = "italic" }, -- italic
+    ["@text.emphasis"]          = { fg = P.red:subtle()}, -- italic
     ["@text.underline"]         = { link = "Underline" }, -- underlined text
     ["@text.strike"]            = { fg = spec.fg1, style = "strikethrough" }, -- strikethrough text
     ["@text.title"]             = { link = "Title"}, -- titles like: # Example
-    ["@text.literal"]           = { fg = syn.ident, style = "italic" }, -- used for inline code in markdown and for doc in python (""")
-    ["@text.uri"]               = { fg = syn.const, style = "italic,underline" }, -- urls, links and emails
+    ["@text.literal"]           = { fg = syn.ident}, -- used for inline code in markdown and for doc in python (""")
+    ["@text.uri"]               = { fg = syn.const}, -- urls, links and emails
     ["@text.math"]              = { fg = syn.func }, -- math environments (e.g. `$ ... $` in LaTeX)
     ["@text.environment"]       = { fg = syn.preproc }, -- text environments of markup languages
     ["@text.environment.name"]  = { fg = syn.func }, -- text indicating the type of an environment
@@ -111,7 +111,7 @@ If you want to stay on nvim 0.7, disable the module, or pin to commit 15f3b5837a
 
     -- Tags
     ["@tag"]                    = { fg = syn.keyword }, -- Tags like html tag names.
-    ["@tag.attribute"]          = { fg = syn.func, style = "italic" }, -- Tags like html tag names.
+    ["@tag.attribute"]          = { fg = syn.func}, -- Tags like html tag names.
     ["@tag.delimiter"]          = { fg = syn.builtin1 }, -- Tag delimiter like < > /
 
     -- Language specific -------------------------------------------------------
