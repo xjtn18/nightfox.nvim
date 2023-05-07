@@ -5,11 +5,11 @@ local M = {}
 function M.get(spec, config, opts)
   -- stylua: ignore
   return {
+    TelescopeNormal         = { fg = spec.syntax.variable },
     TelescopeBorder         = { fg = spec.bg4 },
     TelescopeSelectionCaret = { fg = spec.diag.hint },
     TelescopeSelection      = { link = "CursorLine" },
-    --TelescopeMatching       = { link = "Search" },
-    TelescopeMatching       = { fg = "#5EC5FF", style = "bold" }, -- don't think bold actually works here
+    TelescopeMatching       = { fg = "#d38007", style = "bold" },
   }
 end
 
